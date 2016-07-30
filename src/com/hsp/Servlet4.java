@@ -26,8 +26,8 @@ public class Servlet4 extends HttpServlet {
 		 * 3、如果session.setAttribute("name2", "顺平3")，希望下一个页面可以使用属性值，则两个方法均可以使用，但是建议使用getRequestDispatcher。
 		 * 4、如果我们希望跳转到本Web应用外的一个url，此时只能使用sendRedirect。
 		 */
-		// 3
-		this.getServletContext().getRequestDispatcher("/web/url").forward(request, response);
+		// 3、这种方法和2一眼
+		this.getServletContext().getRequestDispatcher("/资源url").forward(request, response);
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)

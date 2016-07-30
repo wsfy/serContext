@@ -28,7 +28,7 @@ public class Servlet5 extends HttpServlet {
 		out.println("name=" + pp.getProperty("username"));
 		
 		// 如果文件放在src目录下，应该使用类加载器来读取。
-		InputStream is = Servlet5.class.getClassLoader().getResourceAsStream("dbinfo.properties");
+//		InputStream is = Servlet5.class.getClassLoader().getResourceAsStream("dbinfo.properties");
 		
 		// 如何读取到一个文件的全路径
 		String path = this.getServletContext().getRealPath("/imgs/tree_mydoc.png");
